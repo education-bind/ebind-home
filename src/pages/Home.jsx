@@ -1,13 +1,23 @@
-import * as React from "react";
-import Container from "@mui/material/Container";
-import { Typography } from "@mui/material";
+import Companies from "../Components/Companies";
+import Guide from "../Components/Guide";
+import Hero from "../Components/Hero";
+import Properties from "../Components/Properties";
+import Details from "../Components/Details";
+import GetStarted from "../Components/GetStarted";
+import Footer from "../Components/Footer";
 
-export default function Home() {
-  const [age, setAge] = React.useState("");
-
+function Home() {
   return (
     <>
-      <Container maxWidth="xl">Welcone to education bind</Container>
+      <Hero />
+      <Companies />
+      <Guide />
+      <Properties />
+      <Details />
+      <GetStarted />
+      <Footer />
     </>
   );
 }
+
+export default Home;

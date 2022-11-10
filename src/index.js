@@ -1,23 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import React from "react";
 import { BrowserRouter as Router } from 'react-router-dom';
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import THEME from "./theme";
+import { ThemeProvider } from '@mui/material/styles';
 
-const THEME = createTheme({
-  typography: {
-    "fontFamily": `Montserrat`
-  }
-});
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <ThemeProvider theme={THEME}>
-      <Router>
-        <App />
-      </Router>
-    </ThemeProvider>
-  </React.StrictMode>
+  <ThemeProvider theme={THEME}>
+    <Router>
+      <App />
+    </Router>
+  </ThemeProvider>
 );
-

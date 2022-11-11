@@ -4,7 +4,6 @@ import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 import FeaturedPlayListIcon from "@mui/icons-material/FeaturedPlayList";
 import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
-import ListAltIcon from "@mui/icons-material/ListAlt";
 import HomeIcon from "@mui/icons-material/Home";
 import ContactsIcon from "@mui/icons-material/Contacts";
 import logoImg from "../assets/logo.svg";
@@ -46,30 +45,27 @@ export const Navbar = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Home", "Features", "Services", "Listed", "Contact"].map(
-          (text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index === 0 && <HomeIcon />}
-                  {index === 1 && <FeaturedPlayListIcon />}
-                  {index === 2 && <MiscellaneousServicesIcon />}
-                  {index === 3 && <ListAltIcon />}
-                  {index === 4 && <ContactsIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          )
-        )}
+        {["Home", "Features", "About", "Contact"].map((text, index) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                {index === 0 && <HomeIcon />}
+                {index === 1 && <FeaturedPlayListIcon />}
+                {index === 2 && <MiscellaneousServicesIcon />}
+                {index === 3 && <ContactsIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
       </List>
     </Box>
   );
   const Logo = () => (
     <Box
       sx={{
-        width: "50px",
-        height: "50px",
+        width: "30px",
+        height: "30px",
         borderRadius: "5px",
         display: "flex",
         mr: 3,
@@ -80,7 +76,7 @@ export const Navbar = () => {
       <img
         src={logoWhite}
         alt="logo"
-        style={{ width: "30px", margin: "auto" }}
+        style={{ width: "20px", margin: "auto" }}
       />
     </Box>
   );
@@ -112,6 +108,7 @@ export const Navbar = () => {
     marginRight: theme.spacing(2),
     [theme.breakpoints.down("md")]: {
       display: "block",
+      color: "#fff",
     },
   }));
 

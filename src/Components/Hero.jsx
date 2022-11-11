@@ -3,6 +3,7 @@ import { Container } from "@mui/system";
 import React from "react";
 import Navbar from "./Navbar";
 import HelpCenterIcon from "@mui/icons-material/HelpCenter";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import heroImg from "../assets/Vector-2.png";
 import CustomButton from "./CustomButton";
 
@@ -55,6 +56,15 @@ const Hero = () => {
               Everything your school needs to boost it's productivity and be
               ranked as the best school on top of the world
             </Typography>
+            <CustomButton
+              backgroundColor="linear-gradient(345deg, rgba(222,77,0,1) 0%, rgba(254,122,55,1) 52%, rgba(219,76,0,1) 100%)"
+              color="#fff"
+              buttonText="Go Dashboard"
+              heroBtn={true}
+              noBorders={true}
+            >
+              <ArrowForwardRoundedIcon sx={{ mr: 2 }} />
+            </CustomButton>
             <CustomButton
               backgroundColor="linear-gradient(131deg, rgba(0,194,255,0) 0%, rgba(0,194,255,0.18531162464985995) 51%, rgba(0,194,255,0.6979166666666667) 100%)"
               color="#fff"

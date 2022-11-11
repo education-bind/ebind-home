@@ -8,6 +8,7 @@ const CustomButton = ({
   guideBtn,
   getStartedBtn,
   children,
+  noBorders,
 }) => {
   const CustomButton = styled(Button)`
     ${({ theme }) => `
@@ -19,8 +20,9 @@ const CustomButton = ({
     padding: 0.5rem 1.25rem;
     border-radius: 10px;
     text-transform: none;
+    margin: 1em;
     display: flex;
-    border: 2px solid rgb(0 194 255 / 36%);
+    border: ${noBorders ? "none" : "2px solid rgb(0 194 255 / 36%)"};
     transition: ${theme.transitions.create(["transform"], {
       duration: 800,
     })};

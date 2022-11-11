@@ -93,7 +93,7 @@ const Guide = () => {
               my: 1,
             }}
           >
-            Buying Guides
+            Registration Guides
           </Typography>
           <Box
             sx={{
@@ -107,7 +107,7 @@ const Guide = () => {
               variant="body2"
               sx={{ fontWeight: "bold", fontSize: "17px", color: "#0689FF" }}
             >
-              How to buy
+              How to register
             </Typography>
             <ArrowRightAltIcon style={{ color: "#0689FF" }} />
           </Box>
@@ -124,7 +124,7 @@ const Guide = () => {
               my: 1,
             }}
           >
-            Renting Guides
+            Working Guides
           </Typography>
           <Box
             sx={{
@@ -138,7 +138,7 @@ const Guide = () => {
               variant="body2"
               sx={{ fontWeight: "bold", fontSize: "17px", color: "#0689FF" }}
             >
-              How to rent
+              How to use
             </Typography>
             <ArrowRightAltIcon style={{ color: "#0689FF" }} />
           </Box>
@@ -155,7 +155,7 @@ const Guide = () => {
               my: 1,
             }}
           >
-            Selling Guides
+            payments Guides
           </Typography>
           <Box
             sx={{
@@ -169,7 +169,7 @@ const Guide = () => {
               variant="body2"
               sx={{ fontWeight: "bold", fontSize: "17px", color: "#0689FF" }}
             >
-              How to sell
+              How to pay
             </Typography>
             <ArrowRightAltIcon style={{ color: "#0689FF" }} />
           </Box>

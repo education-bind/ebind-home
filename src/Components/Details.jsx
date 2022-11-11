@@ -105,8 +105,8 @@ const Details = () => {
               alignItems: "center",
             }}
           >
-            <LargeText>2500+</LargeText>
-            <SmallText>Homes For Sale</SmallText>
+            <LargeText>25000+</LargeText>
+            <SmallText>Student are passing</SmallText>
           </Box>
 
           <Box
@@ -116,8 +116,8 @@ const Details = () => {
               alignItems: "center",
             }}
           >
-            <LargeText>3000+</LargeText>
-            <SmallText>Properties Rented</SmallText>
+            <LargeText>30000+</LargeText>
+            <SmallText>Graduates are getting jobs</SmallText>
           </Box>
 
           <Box
@@ -127,8 +127,8 @@ const Details = () => {
               alignItems: "center",
             }}
           >
-            <LargeText>3500+</LargeText>
-            <SmallText>Homes Sold</SmallText>
+            <LargeText>300+</LargeText>
+            <SmallText>Schools are registering</SmallText>
           </Box>
         </TextFlexbox>
       </Container>

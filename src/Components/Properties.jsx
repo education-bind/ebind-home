@@ -1,6 +1,6 @@
 import { Box, Container, styled, Typography } from "@mui/material";
 import React from "react";
-import House from "./House";
+import System from "./System";
 import { properties } from "../properties";
 
 const Properties = () => {
@@ -29,7 +29,7 @@ const Properties = () => {
           >
             Features
           </Typography>
-          <Typography sx={{ color: "#5A6473", fontSize: "20px", mt: 1 }}>
+          <Typography sx={{ color: "#002E59", fontSize: "20px", mt: 1 }}>
             Systems we created for your school in order to achieve our goal to
             make your school perfect.
           </Typography>
@@ -37,11 +37,13 @@ const Properties = () => {
 
         <PropertiesBox>
           {properties.map((property) => (
-            <House
+            <System
               key={property.id}
               img={property.img}
               name={property.name}
               details={property.details}
+              buttonColor={property.buttonColor}
+              headerColor={property.headerColor}
             />
           ))}
         </PropertiesBox>
